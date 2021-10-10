@@ -1,0 +1,10 @@
+FROM maven:3.6.0-jdk-8-alpine
+
+# copying src from framework
+COPY src /home/Gelato/src
+
+# copying pom.xml from framework
+COPY pom.xml /home/Gelato
+
+# Running the test cases
+RUN mvn verify -DBrowser=ch
