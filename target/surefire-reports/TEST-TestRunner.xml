@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestRunner" time="73.006" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Vikas\.cache\selenium\chromedriver\win32\94.0.4606.61\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Vikas\Desktop\Gelato_Assessment\gelato_assessment\target\test-classes;C:\Users\Vikas\Desktop\Gelato_Assessment\gelato_assessment\target\classes;C:\Users\Vikas\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\Vikas\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\Vikas\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.14.1\log4j-slf4j-impl-2.14.1.jar;C:\Users\Vikas\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Vikas\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Vikas\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vikas\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Vikas\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Vikas\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Vikas\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Vikas\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Vikas\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Vikas\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Vikas\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-java\6.10.0\cucumber-java-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-core\6.10.0\cucumber-core-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-gherkin\6.10.0\cucumber-gherkin-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.0\cucumber-gherkin-messages-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\Vikas\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-plugin\6.10.0\cucumber-plugin-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\docstring\6.10.0\docstring-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\Vikas\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-testng\6.10.0\cucumber-testng-6.10.0.jar;C:\Users\Vikas\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Vikas\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vikas\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Vikas\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Vikas\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Vikas\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Vikas\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Vikas\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Vikas\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\Vikas\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Vikas\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vikas\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Vikas\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vikas\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Vikas\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Vikas\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Vikas\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Vikas\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vikas\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Vikas\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Vikas\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Vikas\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Vikas\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Vikas\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Vikas\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Vikas\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Vikas\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Vikas\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kuala_Lumpur"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="webdriver.chrome.silentOutput" value="true"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="MY"/>
+    <property name="sun.boot.library.path" value="C:\PROGRA~1\Java\JDK-14~1.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Vikas\AppData\Local\Temp\surefire17892958047846714244\surefirebooter1615619880953240677.jar C:\Users\Vikas\AppData\Local\Temp\surefire17892958047846714244 2021-10-10T19-24-59_635-jvmRun1 surefire2855430060726150809tmp surefire_05981875999952220907tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Vikas\Desktop\Gelato_Assessment\gelato_assessment\target\test-classes;C:\Users\Vikas\Desktop\Gelato_Assessment\gelato_assessment\target\classes;C:\Users\Vikas\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\Vikas\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\Vikas\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.14.1\log4j-slf4j-impl-2.14.1.jar;C:\Users\Vikas\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Vikas\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Vikas\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Vikas\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vikas\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Vikas\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Vikas\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Vikas\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Vikas\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Vikas\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Vikas\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Vikas\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-java\6.10.0\cucumber-java-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-core\6.10.0\cucumber-core-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-gherkin\6.10.0\cucumber-gherkin-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.0\cucumber-gherkin-messages-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\Vikas\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-plugin\6.10.0\cucumber-plugin-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\docstring\6.10.0\docstring-6.10.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\Vikas\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\Vikas\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Vikas\.m2\repository\io\cucumber\cucumber-testng\6.10.0\cucumber-testng-6.10.0.jar;C:\Users\Vikas\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Vikas\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vikas\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Vikas\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Vikas\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Vikas\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Vikas\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Vikas\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Vikas\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\Vikas\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Vikas\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vikas\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Vikas\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vikas\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Vikas\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Vikas\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Vikas\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Vikas\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vikas\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vikas\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Vikas\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Vikas\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Vikas\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Vikas\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Vikas\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Vikas\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Vikas\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Vikas\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Vikas\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Vikas\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Vikas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.home" value="C:\PROGRA~1\Java\JDK-14~1.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Vikas\Desktop\Gelato_Assessment\gelato_assessment"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Vikas\AppData\Local\Temp\surefire17892958047846714244\surefirebooter1615619880953240677.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="user.name" value="Vikas"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="ch"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Vikas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Vikas\AppData\Local\Temp\"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="user.dir" value="C:\Users\Vikas\Desktop\Gelato_Assessment\gelato_assessment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\PROGRA~1\Java\JDK-14~1.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk-14.0.1\bin;C:\Users\Vikas\AppData\Local\Programs\Python\Python37-32\;C:\Users\Vikas\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Vikas\AppData\Local\Android\Sdk\platform-tools;C:\Users\Vikas\AppData\Local\Android\Sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\cmder;C:\Program Files\PuTTY\;C:\Users\Vikas\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Vikas\AppData\Local\Programs\Python\Python37-32\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Vikas\AppData\Local\Microsoft\WindowsApps;C:\Users\Vikas\AppData\Roaming\npm;C:\Users\Vikas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;User is able to get a resource&quot;, &quot;Optional[Test Json Placeholder API&apos;s]&quot;](1)" classname="TestRunner" time="3.647">
+    <system-out><![CDATA[
+@API @JsonPlaceholder @TC_001
+Scenario: User is able to get a resource                                                                                     # src/test/java/features/api/API_Tests.feature:7
+  Given I set the base URI                                                                                                   # stepDef.API_Steps.i_set_the_base_URI()
+  When I send the API request to get a resource                                                                              # stepDef.API_Steps.i_send_the_api_request_to_get_a_resource()
+  Then I should get the response status as 200                                                                               # stepDef.API_Steps.i_should_get_the_response_status_as(int)
+  And I should get  "userId" as "1" in response body                                                                         # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "id" as "1" in response body                                                                             # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "title" as "sunt aut facere repellat provident occaecati excepturi optio reprehenderit" in response body # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "body" contains "quia et suscipit" in response body                                                      # stepDef.API_Steps.i_should_get_contains_in_response_body(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User is able to get all the resources&quot;, &quot;Optional[Test Json Placeholder API&apos;s]&quot;](2)" classname="TestRunner" time="1.609">
+    <system-out><![CDATA[
+@API @JsonPlaceholder @TC_002
+Scenario: User is able to get all the resources    # src/test/java/features/api/API_Tests.feature:17
+  Given I set the base URI                         # stepDef.API_Steps.i_set_the_base_URI()
+  When I send the API request to get all resources # stepDef.API_Steps.i_send_the_api_request_to_get_all_resources()
+  Then I should get the response status as 200     # stepDef.API_Steps.i_should_get_the_response_status_as(int)
+  And I should get 100 objects in response         # stepDef.API_Steps.i_should_get_objects_in_response(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User is able to create a resource&quot;, &quot;Optional[Test Json Placeholder API&apos;s]&quot;](3)" classname="TestRunner" time="0.958">
+    <system-out><![CDATA[
+@API @JsonPlaceholder @TC_003
+Scenario: User is able to create a resource                    # src/test/java/features/api/API_Tests.feature:23
+  Given I set the base URI                                     # stepDef.API_Steps.i_set_the_base_URI()
+  When I add "title, body" as "foo, bar" to request parameters # stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,java.lang.String)
+  When I add "userId" as 1 to request parameters               # stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,int)
+  And I send the API "post" request to create a resource       # stepDef.API_Steps.i_send_the_api_post_request_to_create_a_resource(java.lang.String)
+  Then I should get the response status as 201                 # stepDef.API_Steps.i_should_get_the_response_status_as(int)
+  And I should get  "userId" as "1" in response body           # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "id" as "101" in response body             # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "title" as "foo" in response body          # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "body" contains "bar" in response body     # stepDef.API_Steps.i_should_get_contains_in_response_body(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User is able to update a resource&quot;, &quot;Optional[Test Json Placeholder API&apos;s]&quot;](4)" classname="TestRunner" time="0.803">
+    <system-out><![CDATA[
+@API @JsonPlaceholder @TC_004
+Scenario: User is able to update a resource                    # src/test/java/features/api/API_Tests.feature:34
+  Given I set the base URI                                     # stepDef.API_Steps.i_set_the_base_URI()
+  When I add "title, body" as "foo, bar" to request parameters # stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,java.lang.String)
+  When I add "userId" as 1 to request parameters               # stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,int)
+  When I add "id" as 1 to request parameters                   # stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,int)
+  And I send the API "put" request to update a resource        # stepDef.API_Steps.i_send_the_api_post_request_to_create_a_resource(java.lang.String)
+  Then I should get the response status as 200                 # stepDef.API_Steps.i_should_get_the_response_status_as(int)
+  And I should get  "userId" as "1" in response body           # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "id" as "1" in response body               # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "title" as "foo" in response body          # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "body" contains "bar" in response body     # stepDef.API_Steps.i_should_get_contains_in_response_body(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User is able to patch a resource&quot;, &quot;Optional[Test Json Placeholder API&apos;s]&quot;](5)" classname="TestRunner" time="0.773">
+    <system-out><![CDATA[
+@API @JsonPlaceholder @TC_005
+Scenario: User is able to patch a resource               # src/test/java/features/api/API_Tests.feature:46
+  Given I set the base URI                               # stepDef.API_Steps.i_set_the_base_URI()
+  When I add "title" as "foo" to request parameters      # stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,java.lang.String)
+  And I send the API "patch" request to patch a resource # stepDef.API_Steps.i_send_the_api_post_request_to_create_a_resource(java.lang.String)
+  Then I should get the response status as 200           # stepDef.API_Steps.i_should_get_the_response_status_as(int)
+  And I should get  "userId" as "1" in response body     # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "id" as "1" in response body         # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+  And I should get  "title" as "foo" in response body    # stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User is able to delete a resource&quot;, &quot;Optional[Test Json Placeholder API&apos;s]&quot;](6)" classname="TestRunner" time="0.698">
+    <system-out><![CDATA[
+@API @JsonPlaceholder @TC_006
+Scenario: User is able to delete a resource                 # src/test/java/features/api/API_Tests.feature:55
+  Given I set the base URI                                  # stepDef.API_Steps.i_set_the_base_URI()
+  When I send the API "delete" request to delete a resource # stepDef.API_Steps.i_send_the_api_post_request_to_create_a_resource(java.lang.String)
+  Then I should get the response status as 200              # stepDef.API_Steps.i_should_get_the_response_status_as(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able to add tasks to the To Do list&quot;, &quot;Optional[To do list]&quot;](7)" classname="TestRunner" time="10.216">
+    <system-out><![CDATA[
+@ToDo @TC_001
+Scenario: The User should be able to add tasks to the To Do list # src/test/java/features/todo/ToDo_Tests.feature:7
+  Given I am on To Do Home Page                                  # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  When I enter "Task 1" to ToDo list                             # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 1" is added to ToDo list               # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I enter "Task 2" to ToDo list                             # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 2" is added to ToDo list               # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  Then I should see total 2 items added to ToDo List             # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+  And I should see 2 items left is displayed in the list footer  # stepDef.ToDo_Steps.i_should_see_items_left_is_displayed_in_the_list_footer(java.lang.Integer)
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:25:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able to complete a task&quot;, &quot;Optional[To do list]&quot;](8)" classname="TestRunner" time="7.94">
+    <system-out><![CDATA[
+@ToDo @TC_002
+Scenario: The User should be able to complete a task      # src/test/java/features/todo/ToDo_Tests.feature:16
+  Given I am on To Do Home Page                           # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  When I enter "Task 1" to ToDo list                      # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 1" is added to ToDo list        # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I complete the first task                          # stepDef.ToDo_Steps.i_complete_the_first_task()
+  Then I should see the first task is marked as completed # stepDef.ToDo_Steps.i_should_see_the_first_task_is_marked_as_completed()
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:25:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able to delete a task&quot;, &quot;Optional[To do list]&quot;](9)" classname="TestRunner" time="12.648">
+    <system-out><![CDATA[
+@ToDo @TC_003
+Scenario: The User should be able to delete a task    # src/test/java/features/todo/ToDo_Tests.feature:23
+  Given I am on To Do Home Page                       # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  When I enter "Task 1" to ToDo list                  # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 1" is added to ToDo list    # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I delete the task                              # stepDef.ToDo_Steps.i_delete_the_task()
+  Then I should see the task is deleted from the list # stepDef.ToDo_Steps.i_should_see_the_task_is_deleted_from_the_list()
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:25:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able filter the task according to status&quot;, &quot;Optional[To do list]&quot;](10)" classname="TestRunner" time="7.734">
+    <system-out><![CDATA[
+@ToDo @TC_004
+Scenario: The User should be able filter the task according to status # src/test/java/features/todo/ToDo_Tests.feature:30
+  Given I am on To Do Home Page                                       # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  When I enter "Task 1" to ToDo list                                  # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 1" is added to ToDo list                    # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I enter "Task 2" to ToDo list                                  # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 2" is added to ToDo list                    # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I enter "Task 3" to ToDo list                                  # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 3" is added to ToDo list                    # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I enter "Task 4" to ToDo list                                  # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 4" is added to ToDo list                    # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  Then I should see total 4 items in the ToDo List                    # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+  When I complete the first task                                      # stepDef.ToDo_Steps.i_complete_the_first_task()
+  And I click on "Active" filter                                      # stepDef.ToDo_Steps.i_click_on_filter(java.lang.String)
+  Then I should not see "Task 1" in the to do list                    # stepDef.ToDo_Steps.i_should_not_see_in_the_to_do_list(java.lang.String)
+  And I should see total 3 items in the ToDo List                     # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+  When I click on "Completed" filter                                  # stepDef.ToDo_Steps.i_click_on_filter(java.lang.String)
+  Then I should not see "Task 2" in the to do list                    # stepDef.ToDo_Steps.i_should_not_see_in_the_to_do_list(java.lang.String)
+  And I should not see "Task 3" in the to do list                     # stepDef.ToDo_Steps.i_should_not_see_in_the_to_do_list(java.lang.String)
+  And I should not see "Task 4" in the to do list                     # stepDef.ToDo_Steps.i_should_not_see_in_the_to_do_list(java.lang.String)
+  And I should see total 1 items in the ToDo List                     # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+  When I click on "All" filter                                        # stepDef.ToDo_Steps.i_click_on_filter(java.lang.String)
+  Then I should see total 4 items in the ToDo List                    # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:25:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able to clear completed tasks from the list&quot;, &quot;Optional[To do list]&quot;](11)" classname="TestRunner" time="7.767">
+    <system-out><![CDATA[
+@ToDo @TC_005
+Scenario: The User should be able to clear completed tasks from the list # src/test/java/features/todo/ToDo_Tests.feature:53
+  Given I am on To Do Home Page                                          # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  When I enter "Task 1" to ToDo list                                     # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 1" is added to ToDo list                       # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I enter "Task 2" to ToDo list                                     # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 2" is added to ToDo list                       # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I enter "Task 3" to ToDo list                                     # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 3" is added to ToDo list                       # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  Then I should see total 3 items in the ToDo List                       # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+  When I complete the first task                                         # stepDef.ToDo_Steps.i_complete_the_first_task()
+  And I click on Clear completed link                                    # stepDef.ToDo_Steps.i_click_on_clear_completed_link()
+  Then I should see total 2 items in the ToDo List                       # stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:25:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able to edit a task&quot;, &quot;Optional[To do list]&quot;](12)" classname="TestRunner" time="7.452">
+    <system-out><![CDATA[
+@ToDo @TC_006
+Scenario: The User should be able to edit a task               # src/test/java/features/todo/ToDo_Tests.feature:66
+  Given I am on To Do Home Page                                # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  When I enter "Task 1" to ToDo list                           # stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)
+  Then I should see "Task 1" is added to ToDo list             # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+  When I edit the task to "Updated Task 1"                     # stepDef.ToDo_Steps.i_edit_the_task(java.lang.String)
+  Then I should see "Updated Task 1" is displayed in ToDo list # stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:25:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;The User should be able to see all the required labels on home page&quot;, &quot;Optional[To do list]&quot;](13)" classname="TestRunner" time="9.176">
+    <system-out><![CDATA[
+@ToDo @TC_007
+Scenario: The User should be able to see all the required labels on home page # src/test/java/features/todo/ToDo_Tests.feature:74
+  Given I am on To Do Home Page                                               # stepDef.ToDo_Steps.i_am_on_to_do_home_page()
+  Then I should see todos heading on the top of the page                      # stepDef.ToDo_Steps.i_should_see_todos_heading_on_the_top_of_the_page()
+  And I should see a textbox with "What needs to be done?" placeholder        # stepDef.ToDo_Steps.i_should_see_a_textbox_with_placeholder(java.lang.String)
+  And I should see instructions "Double-click to edit a todo" in footer       # stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)
+  And I should see info "Created by petehunt" in footer                       # stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)
+  And I should see info "Part of TodoMVC" in footer                           # stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2021 7:26:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
