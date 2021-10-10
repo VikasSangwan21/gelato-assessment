@@ -1,0 +1,159 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6620249800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on To Do Home Page",
+            "match": {
+              "location": "stepDef.ToDo_Steps.i_am_on_to_do_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-10T07:18:29.061Z",
+        "before": [
+          {
+            "result": {
+              "duration": 495999600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 74,
+        "name": "The User should be able to see all the required labels on home page",
+        "description": "",
+        "id": "to-do-list;the-user-should-be-able-to-see-all-the-required-labels-on-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 888024000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 153001300,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I should see todos heading on the top of the page",
+            "match": {
+              "location": "stepDef.ToDo_Steps.i_should_see_todos_heading_on_the_top_of_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70999100,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I should see a textbox with \"What needs to be done?\" placeholder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"What needs to be done?\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDef.ToDo_Steps.i_should_see_a_textbox_with_placeholder(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000800,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I should see instructions \"Double-click to edit a todo\" in footer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Double-click to edit a todo\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36003100,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I should see info \"Created by petehunt\" in footer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Created by petehunt\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36996600,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I should see info \"Part of TodoMVC\" in footer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Part of TodoMVC\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ToDo"
+          },
+          {
+            "name": "@TC_007"
+          }
+        ]
+      }
+    ],
+    "name": "To do list",
+    "description": "",
+    "id": "to-do-list",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/todo/ToDo_Tests.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>captcha</td>
+                          <td>1</td>
+                        <td>10 Oct 2021, 15:12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,int)</td>
+                <td>3</td>
+                <td class="duration" data-value="996000">000ms</td>
+                <td class="duration" data-value="332000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_add_as_to_request_parameters(java.lang.String,java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1001000">001ms</td>
+                <td class="duration" data-value="333666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_send_the_api_post_request_to_create_a_resource(java.lang.String)</td>
+                <td>4</td>
+                <td class="duration" data-value="2967871400">2s 967ms</td>
+                <td class="duration" data-value="741967850">741ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_send_the_api_request_to_get_a_resource()</td>
+                <td>1</td>
+                <td class="duration" data-value="1537879200">1s 537ms</td>
+                <td class="duration" data-value="1537879200">1s 537ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_send_the_api_request_to_get_all_resources()</td>
+                <td>1</td>
+                <td class="duration" data-value="256346400">256ms</td>
+                <td class="duration" data-value="256346400">256ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_set_the_base_URI()</td>
+                <td>6</td>
+                <td class="duration" data-value="748000600">748ms</td>
+                <td class="duration" data-value="124666766">124ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_should_get_as_in_response_body(java.lang.String,java.lang.String)</td>
+                <td>12</td>
+                <td class="duration" data-value="807982900">807ms</td>
+                <td class="duration" data-value="67331908">067ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_should_get_contains_in_response_body(java.lang.String,java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="52005700">052ms</td>
+                <td class="duration" data-value="17335233">017ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_should_get_objects_in_response(int)</td>
+                <td>1</td>
+                <td class="duration" data-value="71000300">071ms</td>
+                <td class="duration" data-value="71000300">071ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.API_Steps.i_should_get_the_response_status_as(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="2999700">002ms</td>
+                <td class="duration" data-value="499950">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.Hook.openBrowser()</td>
+                <td>13</td>
+                <td class="duration" data-value="407016500">407ms</td>
+                <td class="duration" data-value="31308961">031ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.Hook.tearDown(io.cucumber.java.Scenario)</td>
+                <td>13</td>
+                <td class="duration" data-value="9053956700">9s 053ms</td>
+                <td class="duration" data-value="696458207">696ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_am_on_to_do_home_page()</td>
+                <td>8</td>
+                <td class="duration" data-value="52555092200">52s 555ms</td>
+                <td class="duration" data-value="6569386525">6s 569ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_click_on_clear_completed_link()</td>
+                <td>1</td>
+                <td class="duration" data-value="50000400">050ms</td>
+                <td class="duration" data-value="50000400">050ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_click_on_filter(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="177008000">177ms</td>
+                <td class="duration" data-value="59002666">059ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_complete_the_first_task()</td>
+                <td>3</td>
+                <td class="duration" data-value="199006400">199ms</td>
+                <td class="duration" data-value="66335466">066ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_delete_the_task()</td>
+                <td>1</td>
+                <td class="duration" data-value="281999900">281ms</td>
+                <td class="duration" data-value="281999900">281ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_edit_the_task(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="229999000">229ms</td>
+                <td class="duration" data-value="229999000">229ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_enter_to_to_do_list(java.lang.String)</td>
+                <td>12</td>
+                <td class="duration" data-value="3030607600">3s 030ms</td>
+                <td class="duration" data-value="252550633">252ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_not_see_in_the_to_do_list(java.lang.String)</td>
+                <td>4</td>
+                <td class="duration" data-value="126001700">126ms</td>
+                <td class="duration" data-value="31500425">031ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_a_textbox_with_placeholder(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="63000900">063ms</td>
+                <td class="duration" data-value="63000900">063ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_instructions(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="140990500">140ms</td>
+                <td class="duration" data-value="46996833">046ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_is_added_to_to_do_list(java.lang.String)</td>
+                <td>13</td>
+                <td class="duration" data-value="340410000">340ms</td>
+                <td class="duration" data-value="26185384">026ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_items_left_is_displayed_in_the_list_footer(java.lang.Integer)</td>
+                <td>1</td>
+                <td class="duration" data-value="63000100">063ms</td>
+                <td class="duration" data-value="63000100">063ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_the_first_task_is_marked_as_completed()</td>
+                <td>1</td>
+                <td class="duration" data-value="30995800">030ms</td>
+                <td class="duration" data-value="30995800">030ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_the_task_is_deleted_from_the_list()</td>
+                <td>1</td>
+                <td class="duration" data-value="5058537800">5s 058ms</td>
+                <td class="duration" data-value="5058537800">5s 058ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_todos_heading_on_the_top_of_the_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="270003000">270ms</td>
+                <td class="duration" data-value="270003000">270ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDef.ToDo_Steps.i_should_see_total_items_added_to_to_do_list(java.lang.Integer)</td>
+                <td>7</td>
+                <td class="duration" data-value="85973600">085ms</td>
+                <td class="duration" data-value="12281942">012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>28</td>
+              <td>127</td>
+              <td class="duration">1m 18s 609ms</td>
+              <td class="duration">618ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
