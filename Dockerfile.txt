@@ -7,4 +7,6 @@ COPY src /home/Gelato/src
 COPY pom.xml /home/Gelato
 
 # Running the test cases
+RUN mvn -f /home/Gelato/pom.xml clean test -DskipTests=true
+RUN cd /home/Gelato
 RUN mvn verify -DBrowser=ch

@@ -1,8 +1,10 @@
 package base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,9 +16,10 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.util.Strings;
 
-import java.util.concurrent.TimeUnit;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Setup {
     public static WebDriver driver;
@@ -31,20 +34,29 @@ public class Setup {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--test-type");
-            options.addArguments("--disable-popup-bloacking");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-gpu");
             options.addArguments("--disable-crash-reporter");
             options.addArguments("--disable-extensions");
             options.addArguments("--disable-in-process-stack-traces");
             options.addArguments("--disable-logging");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--log-level=3");
-            options.addArguments("--output=/dev/null");
             System.setProperty("webdriver.chrome.silentOutput", "true");
             caps.setCapability(ChromeOptions.CAPABILITY, options);
             caps.setJavascriptEnabled(true); 
             driver = new ChromeDriver(options);
+        } else if (driverType.equalsIgnoreCase("rm")) {
+        	ChromeOptions option = new ChromeOptions();
+    		option.addArguments("start-maximized");
+    		DesiredCapabilities chrome = DesiredCapabilities.chrome();
+    		chrome.setJavascriptEnabled(true);
+    		chrome.setCapability(ChromeOptions.CAPABILITY, option);
+    		chrome.setCapability("browserName", "chrome");
+    		WebDriverManager.chromedriver().setup();
+    		try {
+				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chrome);
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
         } else if (driverType.equalsIgnoreCase("ff")) {
             WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options = new FirefoxOptions();
