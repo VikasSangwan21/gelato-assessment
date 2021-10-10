@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 81.1 s - in TestRunner
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.244 s - in TestRunner

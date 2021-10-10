@@ -5,10 +5,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.captcha</groupId>
-	<artifactId>captcha</artifactId>
+	<groupId>org.gelato_assessment</groupId>
+	<artifactId>gelato_assessment</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>captcha</name>
+	<name>gelato_assessment</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,9 +74,6 @@
 			<version>1.1.1</version>
 		</dependency>
 
-
-
-
 	</dependencies>
 
 	<build>
@@ -112,7 +109,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>captcha</projectName>
+							<projectName>gelato_assessment</projectName>
 							<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
 						</configuration>
 					</execution>
