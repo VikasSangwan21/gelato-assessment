@@ -9,8 +9,8 @@
 2. mvn verify -Dbrowser=ch -Dcucumber.filter.tags="@ToDo"
 
 # DOCKER COMMANDS
-Standalone Chrome: docker run -d -p 4444:4444 -p 5900:5900 selenium/standalone-chrome-debug:3.141.59-yttrium
-
 build image: docker build -f Dockerfile.txt -t gelatoimage .
 
-Run Tests: docker run -d --network=host gelatoimage mvn -f /home/Gelato/pom.xml clean test -Dbrowser=“rm”
+Standalone Chrome: docker run -d -p 4444:4444 -p 5900:5900 selenium/standalone-chrome-debug:3.141.59-yttrium
+
+Run Tests: docker run -d --network=host vikassangwan21/gelato mvn -f /home/Gelato/pom.xml clean test -Dbrowser=“rm”
