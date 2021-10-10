@@ -13,4 +13,4 @@ build image: docker build -f Dockerfile.txt -t gelatoimage .
 
 Standalone Chrome: docker run -d -p 4444:4444 -p 5900:5900 selenium/standalone-chrome-debug:3.141.59-yttrium
 
-Run Tests: docker run -d --network=host vikassangwan21/gelato mvn -f /home/Gelato/pom.xml clean test -Dbrowser=“rm”
+Run Tests: docker run --network=host vikassangwan21/gelato mvn -f /home/Gelato/pom.xml clean test -Dbrowser=rm

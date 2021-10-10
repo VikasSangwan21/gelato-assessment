@@ -1,5 +1,7 @@
 package stepDef;
 
+import org.openqa.selenium.WebElement;
+
 import base.GlobalTestData;
 import base.Setup;
 import io.cucumber.java.en.Given;
@@ -92,5 +94,15 @@ public class ToDo_Steps extends Setup {
 	public void i_should_not_see_in_the_to_do_list(String task) {
 		HOME.validateTaskNotDisplayedInToDoList(task);
 	}
-
+	
+	@When("I click on toggle all button")
+	public void i_click_on_toggle_all_button() {
+		HOME.toggleAll();
+	}
+	@Then("I should see the status of all tasks changes to {string}")
+	public void i_should_see_the_status_of_all_tasks_changes_to(String status) {
+		HOME.validateAllTaskStatus(status);
+	}
+	
 }
+	

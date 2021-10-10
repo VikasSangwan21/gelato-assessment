@@ -55,6 +55,8 @@ public class ToDo_HomePage extends Setup {
     public List<WebElement> FOOTER_INFO;
     @FindBy(how = How.CSS, using = "h1")
     public WebElement HEADING;
+    @FindBy(how = How.CSS, using = "[for='toggle-all']")
+    public WebElement TOGGLE_ALL;
 	
 	
     public void validatePageTitle(String title){
@@ -215,5 +217,33 @@ public class ToDo_HomePage extends Setup {
             Assert.fail("Page footer not displayed");
     	}
     }
+    
+    public void toggleAll() {
+    	try {
+    		TOGGLE_ALL.click();
+    	}catch(Exception e) {
+            Assert.fail("Toggle All button not found");
+    	}
+    }
+    
+    public void validateAllTaskStatus(String status) {
+    	try {    
+    		switch(status) {
+    		case "completed":
+    			for(WebElement el : LIST_ITEMS) {
+    				Assert.assertEquals(el.getAttribute("class"), "completed");
+    			}
+    			break;
+    		case "to do":
+    			for(WebElement el : LIST_ITEMS) {
+    				Assert.assertNotEquals(el.getAttribute("class"), "completed");
+    			}
+    			break;
+    		}
+    	}catch(Exception e) {
+            Assert.fail("Toggle All button not found");
+    	}
+    }
+
 }
 
