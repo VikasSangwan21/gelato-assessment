@@ -49,8 +49,6 @@ public class Setup {
     		option.addArguments("start-maximized");
     		DesiredCapabilities chrome = DesiredCapabilities.chrome();
     		chrome.setJavascriptEnabled(true);
-    		chrome.setCapability(ChromeOptions.CAPABILITY, option);
-    		chrome.setCapability("browserName", "chrome");
     		WebDriverManager.chromedriver().setup();
     		try {
 				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chrome);
